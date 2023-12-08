@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        dl {
+            margin-top: 10px;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>About</h1>
+        <p>Source of the data: The dataset used related to IMDB movies and shows is taken from the  Kaggle portal link
+            <a href="https://www.kaggle.com/datasets/maso0dahmed/netflix-movies-and-shows/" target="_blank">here</a>.</p>
+
+        <h2>Variable Definitions</h2>
+        <dl>
+            <dt>title:</dt>
+            <dd>The name of the movie or show, an essential identifier.</dd>
+
+            <dt>type:</dt>
+            <dd>Distinguishes between a movie and a show, indicating the format of the content.</dd>
+
+            <dt>release_year:</dt>
+            <dd>The year the content was released, providing a temporal context.</dd>
+			
+			<dt>age_certification: </dt>
+            <dd>Indicates the age suitability rating, important for audience targeting.</dd>
+			
+			<dt>runtime:</dt>
+            <dd>Duration of the movie or show in minutes, reflecting content length.</dd>
+			
+			<dt>genres: </dt>
+            <dd>Categories of the content, such as comedy, drama, or horror, crucial for understanding its theme.</dd>
+			
+			<dt>production_countries: </dt>
+            <dd>The countries where the content was produced, highlighting geographical influences.</dd>
+			
+			<dt>seasons: </dt>
+            <dd>Number of seasons (applicable for shows), indicating the extent of the content.</dd>
+			
+			<dt>imdb_id: </dt>
+            <dd>A unique identifier for each title on IMDb, useful for cross-referencing.</dd>
+			
+			<dt>imdb_score: </dt>
+            <dd>The IMDb rating of the content, reflecting its popularity and quality.</dd>
+			
+			<dt>imdb_votes: </dt>
+            <dd>The number of votes the content received on IMDb, indicative of viewer engagement and popularity.</dd>
+        </dl>
+    </div>
+</body>
+
+</html>

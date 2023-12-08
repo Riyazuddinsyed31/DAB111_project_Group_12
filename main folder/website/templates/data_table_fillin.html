@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Data related to Imdb Movie shows</h1>
+
+    <p>This dataset provides a comprehensive view of movies and shows available on Netflix. It captures a range of information, offering insights into the type of content, its popularity, and other significant aspects.</p>
+
+    <table border="1">
+        <!-- Displaying the column names as table headers -->
+        <tr>
+            {% for column in columns %}
+                <th>{{ column }}</th>
+            {% endfor %}
+        </tr>
+
+        <!-- Displaying the data rows -->
+        {% for row in movies_shows %}
+            <tr>
+                {% for value in row %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>  
+</body>
+</html>
